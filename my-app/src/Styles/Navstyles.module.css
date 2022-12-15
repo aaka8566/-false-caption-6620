@@ -1,0 +1,10 @@
+.top{
+    border:6px solid pink
+}
+.otop{
+    grid-template-columns:repeat(3, 1fr);
+    justify-content: space-evenly;
+}
+.otopflex{
+    grid-template-columns:repeat(2, 1fr);
+}
