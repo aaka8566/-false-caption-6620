@@ -1,3 +1,4 @@
+import React from 'react';
 import {
     Box,
     Flex,
@@ -13,7 +14,21 @@ import {
     PopoverContent,
     useColorModeValue,
     useBreakpointValue,
-    useDisclosure,Spacer,Image,Grid,GridItem 
+    useDisclosure,Spacer,Image,Grid,GridItem,
+    PopoverHeader,
+    PopoverBody,
+    PopoverFooter,
+    PopoverArrow,
+    PopoverCloseButton,
+    PopoverAnchor, 
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalFooter,
+    ModalBody,
+    ModalCloseButton,
+    FormControl,FormLabel,Input
   } from '@chakra-ui/react';
   import {
     HamburgerIcon,
@@ -24,7 +39,7 @@ import {
   } from '@chakra-ui/icons';
   import nav from "../Styles/Navstyles.module.css"
   import {FaShippingFast} from "react-icons/fa";
-   import { AiFillShop} from "react-icons/ai";
+   import { AiFillShop} from "react-icons/ai";import {FiHeart} from "react-icons/fi";import {BsBag} from "react-icons/bs";
  import Shop from "./Shop.png"
 export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
@@ -153,15 +168,37 @@ export default function WithSubnavigation() {
             justify={'flex-end'}
             direction={'row'}
             spacing={6}>
+              <Popover trigger={'hover'} placement={'bottom-start'}>
+              <PopoverTrigger>
+                <Link
+                  p={2}
+                  
+                  fontSize={'sm'}
+                  fontWeight={500}
+                  
+                  _hover={{
+                    textDecoration: 'none',
+                   
+                  }}>
+                  <Text>
+                More
+              </Text>
+                </Link>
+              </PopoverTrigger>
+              <PopoverContent>
+                <PopoverHeader>hellohi</PopoverHeader>
+              </PopoverContent>
+              </Popover>
+            <Text>|</Text>
             <Button
               as={'a'}
               fontSize={'sm'}
               fontWeight={400}
               variant={'link'}
               href={'#'}>
-              Sign In
+              <InitialFocus/>
             </Button>
-            <Button
+            {/* <Button
               display={{ base: 'none', md: 'inline-flex' }}
               fontSize={'sm'}
               fontWeight={600}
@@ -172,7 +209,9 @@ export default function WithSubnavigation() {
                 bg: 'pink.300',
               }}>
               Sign Up
-            </Button>
+            </Button> */}
+            <FiHeart/>
+            <BsBag/>
           </Stack>
         </Flex>
   
@@ -180,6 +219,8 @@ export default function WithSubnavigation() {
           <MobileNav />
         </Collapse>
       </Box>
+      <Box h="2rem" bg="orange" color="white">{`Lifestyle Is Live ${`>`}`}</Box>
+      
       </>
     );
   }
@@ -337,7 +378,7 @@ export default function WithSubnavigation() {
   
   const NAV_ITEMS= [
     {
-      label: 'Inspiration',
+      label: 'Women',
       children: [
         {
           label: 'Explore Design Work',
@@ -352,7 +393,7 @@ export default function WithSubnavigation() {
       ],
     },
     {
-      label: 'Find Work',
+      label: 'Men',
       children: [
         {
           label: 'Job Board',
@@ -367,11 +408,64 @@ export default function WithSubnavigation() {
       ],
     },
     {
-      label: 'Learn Design',
+      label: 'Kids',
       href: '#',
     },
     {
-      label: 'Hire Designers',
+      label: 'Shoes & Bags',
       href: '#',
     },
+    {
+      label: 'Beauty',
+      href: '#',
+    }
   ];
+  // const moda=()=>{
+
+  // }
+  function InitialFocus() {
+    const { isOpen, onOpen, onClose } = useDisclosure()
+  
+    const initialRef = React.useRef(null)
+    const finalRef = React.useRef(null)
+  
+    return (
+      <>
+        <Button onClick={onOpen}>Sign Up/Sign In</Button>
+        {/* <Button ml={4} ref={finalRef}>
+          I'll receive focus on close
+        </Button> */}
+  
+        <Modal
+          initialFocusRef={initialRef}
+          finalFocusRef={finalRef}
+          isOpen={isOpen}
+          onClose={onClose}
+        >
+          <ModalOverlay />
+          <ModalContent>
+            <ModalHeader>Create your account</ModalHeader>
+            <ModalCloseButton />
+            <ModalBody pb={6}>
+              <FormControl>
+                <FormLabel>First name</FormLabel>
+                <Input ref={initialRef} placeholder='First name' />
+              </FormControl>
+  
+              <FormControl mt={4}>
+                <FormLabel>Last name</FormLabel>
+                <Input placeholder='Last name' />
+              </FormControl>
+            </ModalBody>
+  
+            <ModalFooter>
+              <Button colorScheme='blue' mr={3}>
+                Save
+              </Button>
+              <Button onClick={onClose}>Cancel</Button>
+            </ModalFooter>
+          </ModalContent>
+        </Modal>
+      </>
+    )
+  }

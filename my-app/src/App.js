@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import WithSubnavigation from "./Components/Navbar.jsx";
+import Home from "./Allpages/Home.jsx";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <WithSubnavigation/>
+  <Home/>
     </div>
   );
 }
