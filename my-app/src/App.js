@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import Home from "./Allpages/Home.jsx";
-
+import Allroutes from './Components/Allroutes';
 function App() {
   return (
     <div className="App">
@@ -19,7 +19,8 @@ function App() {
           Learn React
         </a>
       </header> */}
-  <Home/>
+  {/* <Home/> */}
+  <Allroutes/>
     </div>
   );
 }
