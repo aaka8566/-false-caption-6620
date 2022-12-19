@@ -27,7 +27,7 @@ export default function Fotter(){
     <GridItem textAlign={"left"}>
         <Text fontSize={"20px"} fontWeight={"bold"}>Women</Text>
 <Link to="/men" ><Text>Tops</Text></Link>
-<Link to="/men" ><Text>Ethnicwear</Text></Link>
+<Link to="/women" ><Text>Ethnicwear</Text></Link>
 <Link to="/men" ><Text>Winter</Text></Link>
 <Link to="/men" ><Text>Sports</Text></Link>
 <Link to="/men" ><Text>Casual</Text></Link>

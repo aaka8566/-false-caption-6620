@@ -1,4 +1,5 @@
 import React from 'react';
+  import {NavLink} from "react-router-dom"
 import {
     Box,
     Flex,
@@ -8,7 +9,7 @@ import {
     Stack,
     Collapse,
     Icon,
-    Link,
+     Link,
     Popover,
     PopoverTrigger,
     PopoverContent,
@@ -154,7 +155,7 @@ export default function WithSubnavigation() {
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
-              <Image w="80px"src={Shop} alt="memo" ></Image>
+             <Link href="/"><Image w="80px"src={Shop} alt="memo" ></Image></Link> 
             </Text>
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -211,7 +212,7 @@ export default function WithSubnavigation() {
               Sign Up
             </Button> */}
             <FiHeart/>
-            <BsBag/>
+           <Link href="/cart"> <BsBag/></Link>
           </Stack>
         </Flex>
   
@@ -383,7 +384,7 @@ export default function WithSubnavigation() {
         {
           label: 'Explore Design Work',
           subLabel: 'Trending Design to inspire you',
-          href: '#',
+          href: '/women',
         },
         {
           label: 'New & Noteworthy',
@@ -398,7 +399,7 @@ export default function WithSubnavigation() {
         {
           label: 'Job Board',
           subLabel: 'Find your dream design job',
-          href: '#',
+          href: '/men',
         },
         {
           label: 'Freelance Projects',
