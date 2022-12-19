@@ -48,14 +48,14 @@ export default function WithSubnavigation() {
     return (
         <>
        <Flex  bg="grey" display="flex" className={nav.top}  justifyContent="space-evenly">
-       <Box w="40%" border="1px solid red">
+       <Box w="40%" border="0px solid red">
        {/* flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}  */}
          
             {/* <Image src=""/> */}
-            <Flex border="1px solid red" justifyContent="space-evenly" className={nav.otopflex}>
+            <Flex border="0px solid red" justifyContent="space-evenly" className={nav.otopflex}>
               <Flex>
-           <FaShippingFast  border="1px solid blue"/>
-           <Text  border="1px solid blue"
+           <FaShippingFast  border="0px solid blue"/>
+           <Text  border="0px solid blue"
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
             //   color={useColorModeValue('gray.800', 'white')}
@@ -66,7 +66,7 @@ export default function WithSubnavigation() {
             </Text>
             </Flex>
             
-            <Flex border="1px solid red" justifyContent="space-evenly">
+            <Flex border="0px solid red" justifyContent="space-evenly">
             <AiFillShop/>
             <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
@@ -77,7 +77,7 @@ export default function WithSubnavigation() {
               Click & Collect
             </Text>
             </Flex>
-            <Flex border="1px solid red">
+            <Flex border="0px solid red">
             <AiFillShop/>
             <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
@@ -91,9 +91,9 @@ export default function WithSubnavigation() {
    </Flex>
    </Box>
    {/* <Spacer/> */}
-   <Box w="24%" border="6px solid red"></Box>
+   <Box w="24%" border="0px solid red"></Box>
    {/* <Spacer/> */}
-   <Box w="27%" border="6px solid red">
+   <Box w="27%" border="0px solid red">
    <Flex justifyContent="space-between">
    <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
@@ -382,13 +382,13 @@ export default function WithSubnavigation() {
       label: 'Women',
       children: [
         {
-          label: 'Explore Design Work',
+          label: 'Latest Fashion',
           subLabel: 'Trending Design to inspire you',
           href: '/women',
         },
         {
           label: 'New & Noteworthy',
-          subLabel: 'Up-and-coming Designers',
+          subLabel: 'Up-and-coming ',
           href: '#',
         },
       ],
@@ -397,13 +397,13 @@ export default function WithSubnavigation() {
       label: 'Men',
       children: [
         {
-          label: 'Job Board',
-          subLabel: 'Find your dream design job',
+          label: 'Winter',
+          subLabel: 'Find your collection',
           href: '/men',
         },
         {
-          label: 'Freelance Projects',
-          subLabel: 'An exclusive list for contract work',
+          label: 'Trending',
+          subLabel: 'Collections',
           href: '#',
         },
       ],

@@ -1,5 +1,5 @@
 .top{
-    border:6px solid pink
+    border:0px solid pink
 }
 .otop{
     grid-template-columns:repeat(3, 1fr);

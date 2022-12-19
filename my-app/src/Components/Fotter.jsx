@@ -5,14 +5,14 @@ export default function Fotter(){
     return (
         <>
         <Box justifyContent={"space-between"} w="100%" margin={"auto"}>
-            <Grid justifyContent={"space-between"} border={"1px solid red"} templateColumns={"40% 40%"}>
-                <GridItem border={"1px solid blue"}>
+            <Grid justifyContent={"space-between"} border={"0px solid red"} templateColumns={"40% 40%"}>
+                <GridItem border={"0px solid blue"}>
                 <Text fontSize={"20px"} fontWeight={"bold"} textAlign={"left"}>Subscribe to our awesome emails.</Text>
                 <Text color={"grey"}  textAlign={"left"}>Get our latest offers and news straight in your inbox.</Text>
                 <Input marginTop={"40px"} marginLeft={"0px"} w="60%" placeholder="Please Enter an E-MAIL Address" backgroundColor={"rgb(247,248,247)"}></Input>
                 <Button backgroundColor={"black"} color="white">Subscribe</Button>
                 </GridItem>
-                <GridItem border={"1px solid blue"}>
+                <GridItem border={"0px solid blue"}>
                 <Text fontSize={"20px"} fontWeight={"bold"} textAlign={"left"}>Download our apps</Text>
                 <Text color={"grey"}  textAlign={"left"}>Shop our products and offers on-the-go.</Text>
                
@@ -77,10 +77,10 @@ export default function Fotter(){
                 <GridItem></GridItem>
             </Grid>
         </Box>
-        <Box w="100%" border={"1px solid red"} marginTop={"20px"}>
+        <Box w="100%" border={"0px solid red"} marginTop={"20px"}>
             <Flex>
-            <Image w="100px" src={Shop} alt="memo"  border={"1px solid blue"}></Image>
-            <Text marginLeft={"20px"} w="25%" border={"1px solid red"} textAlign={"right"}>© 2022 RNA Intellectual Property Limited.
+            <Image w="100px" src={Shop} alt="memo"  border={"0px solid blue"}></Image>
+            <Text marginLeft={"20px"} w="25%" border={"0px solid red"} textAlign={"right"}>© 2022 RNA Intellectual Property Limited.
 Terms & Conditions - Privacy Policy</Text>
 </Flex>
         </Box>
