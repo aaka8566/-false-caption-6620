@@ -40,11 +40,11 @@ const [ss,setss]=React.useState("block");
 
   React.useEffect(() => {
     GetData();
-  }, [cartData.length]);
+  }, [cartData]);
 
   React.useEffect(() => {
     total();
-  }, [cartData.length]);
+  }, [cartData]);
 
   React.useEffect(() => {
     if (cartTotal == 0) {
@@ -130,6 +130,7 @@ const [ss,setss]=React.useState("block");
             <InitialFocus
             cartData={cartData}
             GetData={()=>GetData()}
+            setCartData={setCartData}
             />
           </div>
         </div>
@@ -144,7 +145,7 @@ export default Cart;
 
 
 
-function InitialFocus({cartData,GetData}) {
+function InitialFocus({cartData,GetData,setCartData}) {
     const { isOpen, onOpen, onClose } = useDisclosure()
   const [s,sets]=React.useState(false);
     const initialRef = React.useRef(null)
@@ -178,6 +179,7 @@ console.log("he");
 for(let j=0;j<=cartData.length-1;j++){
     deleteData(cartData[j].id)
 }
+setCartData([]);
 sets(true);
 GetData()
   }

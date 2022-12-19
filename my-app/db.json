@@ -123,28 +123,7 @@
       "des": "DENIMIZE Men Solid Regular Fit Bomber Jacket"
     }
   ],
-  "cart": [
-    {
-      "2": 0.7978915803597646,
-      "id": 2,
-      "img": [
-        "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000012072214-Blue-Navy-1000012072214_01-2100.jpg",
-        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000012072214-Blue-Navy-1000012072214_02-2100.jpg"
-      ],
-      "price": 2500,
-      "des": "Peter England Men Faded Denim Jacket"
-    },
-    {
-      "1": 0.42447945964012646,
-      "id": 1,
-      "img": [
-        "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010436076-Black-1000010436076_01-2100.jpg",
-        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010436076-Black-1000010436076_01-2100.jpg"
-      ],
-      "price": 1220,
-      "des": "JACK & JONES Men Faded Denim Jacket"
-    }
-  ],
+  "cart": [],
   "users": [
     {
       "id": 1,
